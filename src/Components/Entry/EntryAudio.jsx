@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import matrix from "../../Assets/matrixtheme.mp3";
-import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/Ai";
+import play from "../../Assets/play.png";
+import pause from "../../Assets/pause.png";
 
 const style = {
   fontSize: 30,
@@ -28,9 +29,9 @@ function EntryAudio() {
     <Main>
       <Div onClick={playPause}>
         {isPlaying ? (
-          <AiFillPlayCircle style={style} />
+          <Img src={pause} alt="play"></Img>
         ) : (
-          <AiFillPauseCircle style={style} />
+          <Img src={play} alt="pause"></Img>
         )}
       </Div>
       <audio ref={audioRef}>
@@ -58,6 +59,11 @@ const Div = styled.div`
   height: auto;
   color: white;
   width: auto;
+`;
+
+const Img = styled.img`
+  height: 20px;
+  width: 20px;
 `;
 
 export default EntryAudio;
