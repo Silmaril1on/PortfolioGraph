@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "whiteRabbit";
+  src: local("white rabbit"),
+    url("../src/Fonts/white-rabbit.regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "square";
+  src: local("square"),
+    url("../src/Fonts/Squarea\ Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "grande";
+  src: local("grande"), url("../src/Fonts/RioGrande.ttf") format("truetype");
+}
+@font-face {
+  font-family: "docktrin";
+  src: local("docktrin"), url("../src/Fonts/docktrin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("../src/Fonts/SemplicitaPro-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("../src/Fonts/SemplicitaPro.otf") format("opentype");
+}
+@font-face {
+  font-family: "rdr";
+  src: local("rdr"), url("../src/Fonts/CHINESER.TTF") format("truetype");
+}
