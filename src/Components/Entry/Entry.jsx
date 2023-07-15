@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components";
 import banner from "../../Assets/bk2.jpg";
 import Text from "./Text";
 import WhiteButton from "./WhiteButton";
-import EntryAudio from "./EntryAudio";
 
 function Entry() {
   return (
