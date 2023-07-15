@@ -3,11 +3,13 @@ import styled, { keyframes } from "styled-components";
 import banner from "../../Assets/bk2.jpg";
 import Text from "./Text";
 import WhiteButton from "./WhiteButton";
+import EntryAudio from "../Entry/EntryAudio";
 
 function Entry() {
   return (
     <Background>
       <Blur>
+        <EntryAudio />
         <Text />
         <WhiteButton />
       </Blur>
