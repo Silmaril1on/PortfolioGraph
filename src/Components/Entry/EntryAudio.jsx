@@ -28,7 +28,7 @@ function EntryAudio() {
     <Main>
       <Div onClick={playPause}>
         {isPlaying ? (
-          <BsPausAiFillPlayCircleeFill style={style} />
+          <AiFillPlayCircle style={style} />
         ) : (
           <AiFillPauseCircle style={style} />
         )}
