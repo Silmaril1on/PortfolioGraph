@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import matrix from "../../Assets/matrixtheme.mp3";
-import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/Bs";
+import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/Ai";
 
 const style = {
   fontSize: 30,
