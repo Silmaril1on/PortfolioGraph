@@ -1,12 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
-import matrix from "../../Assets/matrixtheme.mp3";
+import matrix from "../../Assets/matrixTheme.mp3";
 import play from "../../Assets/play.png";
 import pause from "../../Assets/pause.png";
-
-const style = {
-  fontSize: 30,
-};
 
 function EntryAudio() {
   const [isPlaying, setIsPlaying] = useState(false);
