@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import video from "../../../../Assets/dieselclip.mp4";
+import video from "../../../../Assets/dieselClip.mp4";
 
 function DieselVideo() {
   return (
