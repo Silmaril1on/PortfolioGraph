@@ -10,7 +10,9 @@ function Information() {
           return (
             <div className="lang-container" key={index}>
               <div className="row-container">
-                <div className="logo-div">{item.image} </div>
+                <div className="logo-div">
+                  <img src={item.image} alt="logo" />
+                </div>
                 <div className="lang-content">
                   <h1>{item.name}</h1>
                 </div>

@@ -1,14 +1,15 @@
-import { AiFillHtml5 } from "react-icons/Ai";
-import { BiLogoCss3, BiLogoReact } from "react-icons/Bi";
-import { DiJavascript } from "react-icons/Di";
 import w3s from "../../Assets/w3s.png";
 import codingaddict from "../../Assets/caddict.jpg";
 import bitcamp from "../../Assets/bitcamp.jpg";
+import html from "../../Assets/html.png";
+import react from "../../Assets/React1.png";
+import js from "../../Assets/java-script.png";
+import css from "../../Assets/css-3.png";
 
 const languages = [
   {
     name: "HTML",
-    image: <AiFillHtml5 />,
+    image: html,
     course: [
       {
         name: "W3schools basics of HTML",
@@ -29,7 +30,7 @@ const languages = [
   },
   {
     name: "CSS",
-    image: <BiLogoCss3 />,
+    image: css,
     course: [
       {
         name: "W3schools CSS Basics",
@@ -50,7 +51,7 @@ const languages = [
   },
   {
     name: "Javascript",
-    image: <DiJavascript />,
+    image: js,
     course: [
       {
         name: "W3schools Javascript Fundamentals",
@@ -71,7 +72,7 @@ const languages = [
   },
   {
     name: "React",
-    image: <BiLogoReact />,
+    image: react,
     course: [
       {
         name: "W3schools REACT basics",

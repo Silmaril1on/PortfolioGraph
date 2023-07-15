@@ -1,42 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import { VscTerminalCmd } from "react-icons/Vsc";
-import { AiOutlineMinus, AiOutlineClose } from "react-icons/Ai";
-import { BsSquare } from "react-icons/Bs";
-
-const style = {
-  fontSize: 30,
-  marginTop: 5,
-  padding: 3,
-};
-
-const small = {
-  fontSize: 25,
-  marginTop: 7,
-  padding: 3,
-};
-
-const left = {
-  marginLeft: 10,
-};
+import minus from "../../Assets/minus.png";
+import square from "../../Assets/square.png";
+import close from "../../Assets/close.png";
+import cmd from "../../Assets/command.png";
 
 function Tab() {
   return (
     <Section>
       <Bar>
-        <VscTerminalCmd />
+        <Cmd src={cmd} alt="cmd" />
         <Text>C:\WINDOWS\system32\cmd.</Text>
-        <AiOutlineClose style={left} />
       </Bar>
       <IconsDiv>
         <IconWrapper>
-          <AiOutlineMinus style={style} />
+          <Img src={minus} alt="minus" />
         </IconWrapper>
         <IconWrapper>
-          <BsSquare style={small} />
+          <Img src={square} alt="square" />
         </IconWrapper>
         <IconWrapper>
-          <AiOutlineClose style={style} />
+          <Img src={close} alt="close" />
         </IconWrapper>
       </IconsDiv>
     </Section>
@@ -64,6 +48,11 @@ const Bar = styled.div`
   background-color: black;
   margin: 5px 5px;
   width: 230px;
+`;
+
+const Cmd = styled.img`
+  height: 15px;
+  width: 15px;
 `;
 
 const Text = styled.h3`
@@ -94,6 +83,12 @@ const IconWrapper = styled.div`
   &:hover:nth-child(3) {
     background-color: red;
   }
+`;
+
+const Img = styled.img`
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
 `;
 
 export default Tab;

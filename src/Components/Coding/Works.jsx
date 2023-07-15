@@ -2,7 +2,8 @@ import React from "react";
 import image1 from "../../Assets/firstWork-min.jpg";
 import image2 from "../../Assets/secondWork-min.jpg";
 import image3 from "../../Assets/thirdwork-min.jpg";
-import { SiNetlify, SiGithub } from "react-icons/Si";
+import github from "../../Assets/github.png";
+import netlify from "../../Assets/netlify.png";
 
 const workData = [
   {
@@ -44,10 +45,12 @@ function Works() {
               </a>
               <div className="works-content-div">
                 <a href={link1} target="_blank">
-                  <SiNetlify /> {link1}
+                  <img src={netlify} alt="netlify" />
+                  {link1}
                 </a>
                 <a href={link2} target="_blank">
-                  <SiGithub /> {link2}
+                  <img src={github} alt="github" />
+                  {link2}
                 </a>
                 <h3>{desc}</h3>
               </div>
