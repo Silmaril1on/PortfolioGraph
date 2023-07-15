@@ -8,7 +8,6 @@ function Entry() {
   return (
     <Background>
       <Blur>
-        <EntryAudio />
         <Text />
         <WhiteButton />
       </Blur>
