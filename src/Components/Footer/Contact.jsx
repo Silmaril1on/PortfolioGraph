@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import yahoo from "../../Assets/yahoo.png";
+import gmail from "../../Assets/gmail.png";
 
 const style = {
   fontSize: 30,
@@ -15,12 +17,12 @@ function Contact() {
       <Div>
         <Div1>
           <Link style={style} to="mailto:graphchiqovani@yahoo.com">
-            <h1>hello</h1>
+            <Img src={yahoo} alt="yahoo" />
           </Link>
         </Div1>
         <Div1>
           <Link style={style} to="mailto:graphlev1@gmail.com">
-            <h1>hello</h1>
+            <Img src={gmail} alt="gmail" />
           </Link>
         </Div1>
       </Div>
@@ -59,6 +61,11 @@ const Title = styled.h1`
   margin-top: 20px;
   letter-spacing: 2px;
   text-align: center;
+`;
+
+const Img = styled.img`
+  height: 35px;
+  width: 35px;
 `;
 
 export default Contact;

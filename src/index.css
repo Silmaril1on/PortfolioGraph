@@ -3,11 +3,7 @@
   src: local("white rabbit"),
     url("../src/Fonts/white-rabbit.regular.ttf") format("truetype");
 }
-@font-face {
-  font-family: "square";
-  src: local("square"),
-    url("../src/Fonts/Squarea\ Regular.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "grande";
   src: local("grande"), url("../src/Fonts/RioGrande.ttf") format("truetype");
@@ -29,4 +25,8 @@
 @font-face {
   font-family: "rdr";
   src: local("rdr"), url("../src/Fonts/CHINESER.TTF") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
 }

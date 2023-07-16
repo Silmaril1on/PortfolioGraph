@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const navlinks = [
   {
@@ -21,11 +22,29 @@ const navlinks = [
   },
 ];
 
+const slideLeft = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: {
+      duration: 1,
+      delay: 1.2,
+    },
+  },
+};
+
 function Navigation() {
   const [pages] = useState(navlinks);
 
   return (
-    <Section>
+    <Section
+      as={motion.section}
+      variants={slideLeft}
+      initial="hidden"
+      animate="visible"
+    >
       {pages.map((page, index) => {
         return (
           <Container key={index}>
@@ -42,7 +61,7 @@ const Section = styled.section`
   height: auto;
   left: 25px;
   position: absolute;
-  transform: rotate(-3deg);
+
   width: 250px;
   @media (min-width: 1000px) {
     left: 80px;
@@ -53,6 +72,7 @@ const Container = styled.div`
   display: flex;
   margin: 4px;
   overflow: hidden;
+  transform: rotate(-3deg);
   width: 400px;
 `;
 
