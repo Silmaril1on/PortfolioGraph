@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import cinema from "../Movies/cinemaData";
-import "../Interests.css";
+import "../interests.css";
 
 const mainVariant = {
   hidden: {
