@@ -23,8 +23,6 @@ const slideVariants = {
   visible: {
     x: 0,
     transition: {
-      type: "spring",
-      stiffness: 120,
       duration: 3,
       delay: 13,
     },
@@ -38,8 +36,6 @@ const childVariants = {
   visible: {
     x: 0,
     transition: {
-      type: "spring",
-      stiffness: 120,
       duration: 3,
       delay: 13,
     },
