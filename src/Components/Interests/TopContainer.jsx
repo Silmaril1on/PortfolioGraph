@@ -1,5 +1,5 @@
 import React from "react";
-import "./Interests.css";
+import "./interests.css";
 import styled from "styled-components";
 import ubisoft from "../../Assets/ubisoft-min.jpg";
 import marvel from "../../Assets/marvel-logo-min.jpg";
