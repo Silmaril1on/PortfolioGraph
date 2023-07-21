@@ -1,11 +1,23 @@
 import React from "react";
-import styled from "styled-components";
 import gaming from "./gameData";
 import "../interests.css";
+import { motion } from "framer-motion";
+
+const childvariant = {
+  hidden: {
+    x: -1000,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 function GameList() {
   return (
-    <section className="game-list-container">
+    <motion.section variants={childvariant} className="game-list-container">
       {gaming.slice(1, 2).map((item, index) => {
         return (
           <div className="game-list-inner-container" key={index}>
@@ -31,7 +43,7 @@ function GameList() {
           </div>
         );
       })}
-    </section>
+    </motion.section>
   );
 }
 

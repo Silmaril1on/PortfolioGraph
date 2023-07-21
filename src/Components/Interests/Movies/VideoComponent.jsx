@@ -10,7 +10,7 @@ function VideoComponent() {
       </Video>
       <Text>
         <Title>
-          my iconic subs of <Gold>cinematography</Gold>...{" "}
+          my selection of <Gold>cinematography</Gold>...{" "}
         </Title>
         <Ul>
           <Li>movies</Li>
@@ -97,7 +97,6 @@ const Ul = styled.ul`
 `;
 const Li = styled.li`
   background: linear-gradient(to right, #d1840f 60%, #d4b70f);
-  border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   margin: 5px;

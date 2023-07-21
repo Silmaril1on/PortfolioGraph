@@ -5,8 +5,8 @@ import Movies from "../Interests/Movies/Movies";
 import Games from "./Games/Games";
 
 function Buttons() {
-  const [moviesPage, setMoviesPage] = useState(false);
-  const [gamesPage, setGamesPage] = useState(true);
+  const [moviesPage, setMoviesPage] = useState(true);
+  const [gamesPage, setGamesPage] = useState(false);
 
   return (
     <Main>

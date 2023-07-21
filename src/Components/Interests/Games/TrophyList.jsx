@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import gameData from "../Games/gameData";
 import banner from "../../../Assets/trophiesback-min.jpg";
+import { motion } from "framer-motion";
+
+const childvariant = {
+  hidden: {
+    x: -1000,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 function TrophyList() {
+  const [visible, setVisible] = useState(10);
+
+  const showMore = () => {
+    setVisible((prevValue) => prevValue + 10);
+  };
+
   return (
     <Section>
       {gameData.slice(0, 1).map((item, index) => {
         return (
           <div key={index}>
             <Title>{item.name}</Title>
-            <TrophyDiv>
-              {item.trophy.map((cup, index) => {
+            <TrophyDiv as={motion.section} variants={childvariant}>
+              {item.trophy.slice(0, visible).map((cup, index) => {
                 return (
                   <div key={index}>
                     <ImgDiv>
@@ -20,6 +39,7 @@ function TrophyList() {
                   </div>
                 );
               })}
+              <Button onClick={showMore}>Show More</Button>
             </TrophyDiv>
           </div>
         );
@@ -29,6 +49,11 @@ function TrophyList() {
 }
 
 const Section = styled.section`
+  background: linear-gradient(90deg, #000000be, #a5170476), url(${banner});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,11 +72,6 @@ const Title = styled.h1`
 
 const TrophyDiv = styled.div`
   align-items: center;
-  background: linear-gradient(90deg, #000000be, #a5170476), url(${banner});
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +88,7 @@ const ImgDiv = styled.div`
   height: auto;
   margin: 5px;
   overflow: hidden;
+
   width: 345px;
 `;
 
@@ -78,6 +99,26 @@ const Img = styled.img`
   transition: 0.3s;
   width: 100%;
   &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const Button = styled.button`
+  border-radius: 10px;
+  background-color: #151515;
+  border: none;
+  box-shadow: 0 0 3px #ddd;
+  color: #ccc;
+  cursor: pointer;
+  font: bold 1rem semplicitapro;
+  height: 40px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  width: 150px;
+  &:hover {
+    background-color: black;
+    box-shadow: 0 0 6px #ddd;
+    color: white;
     transform: scale(1.1);
   }
 `;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import GameList from "./GameList";
 
 function FavGames() {
-  const [game, setGame] = useState(true);
+  const [game, setGame] = useState(false);
 
   return (
     <Section>

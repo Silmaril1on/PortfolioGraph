@@ -50,7 +50,6 @@ const Text = styled.div`
   width: 100%;
   @media (min-width: 700px) {
     height: auto;
-    margin: 0 5px;
     width: 50%;
   }
   @media (min-width: 1200px) {

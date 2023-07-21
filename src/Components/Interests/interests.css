@@ -1,6 +1,5 @@
 .int-buttons {
   background: linear-gradient(to right, #d1840f 50%, #d4b70f);
-  border-radius: 10px;
   border: none;
   color: white;
   cursor: pointer;
@@ -24,7 +23,6 @@
 
 .int-buttons::before {
   background: rgba(255, 253, 253, 0.452);
-  border-radius: 10px;
   content: "";
   position: absolute;
   top: 50%;
@@ -168,6 +166,7 @@
 }
 
 .front > img {
+  border: 2px solid rgb(180, 137, 28);
   height: 100%;
   width: 100%;
 }
