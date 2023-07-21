@@ -46,7 +46,7 @@ const Title = styled.h1`
 `;
 
 const Img = styled.img`
-  filter: saturate(0.1);
+  filter: brightness(0.5);
   height: 100%;
   object-fit: cover;
   transform: scale(1.3) translateX(10px);

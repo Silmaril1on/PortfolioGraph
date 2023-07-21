@@ -32,12 +32,12 @@
   display: flex;
   justify-content: center;
   height: 80px;
-  width: 80px;
+  width: auto;
 }
 
 .logo-div > img {
   height: 65px;
-  width: 65px;
+  width: auto;
 }
 
 .lang-content {

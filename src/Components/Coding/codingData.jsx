@@ -5,6 +5,8 @@ import html from "../../Assets/html.png";
 import react from "../../Assets/React1.png";
 import js from "../../Assets/java-script.png";
 import css from "../../Assets/css-3.png";
+import router from "../../Assets/router.png";
+import jquery from "../../Assets/jquery.png";
 
 const languages = [
   {
@@ -71,6 +73,22 @@ const languages = [
     ],
   },
   {
+    name: "jQuery",
+    image: jquery,
+    course: [
+      {
+        name: "W3schools jQuery",
+        link: "https://www.w3schools.com/jquery/default.asp",
+        logo: w3s,
+      },
+      {
+        name: "Coding Addict jQuery",
+        link: "https://www.youtube.com/watch?v=1VZZlVIgJJM&t=7586s&ab_channel=CodingAddict",
+        logo: codingaddict,
+      },
+    ],
+  },
+  {
     name: "React",
     image: react,
     course: [
@@ -87,6 +105,22 @@ const languages = [
       {
         name: "BitCamp Georgia REACTOR course",
         link: "https://www.youtube.com/playlist?list=PLinr8mxnrkqsNN_9YFIyJQGY75hy5t1yK",
+        logo: bitcamp,
+      },
+    ],
+  },
+  {
+    name: "React-Router",
+    image: router,
+    course: [
+      {
+        name: "Coding Addict react-router",
+        link: "https://www.youtube.com/watch?v=DAl2mGI5Sno&list=PLnHJACx3NwAfxP8hMTldpO-VnO_kvk5DD&index=1&t=3192s&ab_channel=CodingAddict",
+        logo: codingaddict,
+      },
+      {
+        name: "BitCamp Georgia REACTOR course",
+        link: "https://www.youtube.com/watch?v=aZEfpm2QplA&t=2462s&ab_channel=BitCamp",
         logo: bitcamp,
       },
     ],

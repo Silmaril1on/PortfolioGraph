@@ -39,16 +39,17 @@ function TrophyList() {
                   </div>
                 );
               })}
-              <Button onClick={showMore}>Show More</Button>
             </TrophyDiv>
           </div>
         );
       })}
+      <Button onClick={showMore}>Show More</Button>
     </Section>
   );
 }
 
 const Section = styled.section`
+  align-items: center;
   background: linear-gradient(90deg, #000000be, #a5170476), url(${banner});
   background-position: center;
   background-size: cover;
@@ -113,6 +114,7 @@ const Button = styled.button`
   font: bold 1rem semplicitapro;
   height: 40px;
   letter-spacing: 1px;
+  margin: 20px;
   transition: 0.3s;
   width: 150px;
   &:hover {
