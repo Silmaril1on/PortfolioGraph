@@ -14,13 +14,6 @@ function Alasania() {
           <h1>years</h1>
           <h1>2009-2010</h1>
           <h1>faculty of Sciences and Art</h1>
-          <p>
-            So, first big step after finishig the high school. -{" "}
-            <Gold>university of georgia</Gold> our "beloved" presidents mothers
-            university. unlike ilia state uni it took my lifetimes single year
-            and there i faced my first community. that fascinating emotion when
-            i first stepped into it, i will never forget.
-          </p>
         </div>
       </Container>
     </Section>
@@ -63,12 +56,6 @@ const Img = styled.img`
   object-fit: cover;
   filter: saturate(0.3);
   width: 100%;
-`;
-
-const Gold = styled.span`
-  color: goldenrod;
-  text-shadow: 0 0 4px black;
-  padding: 5px;
 `;
 
 export default Alasania;

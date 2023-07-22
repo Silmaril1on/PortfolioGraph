@@ -87,7 +87,7 @@ const Div = styled.div`
 
 const Title = styled.h1`
   color: black;
-  font: normal 1.3rem grande;
+  font: normal 1.3rem semplicitapro;
   letter-spacing: 1px;
   padding: 2.8px;
   text-transform: capitalize;

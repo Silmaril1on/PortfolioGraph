@@ -12,12 +12,6 @@ function VideoComponent() {
         <Title>
           my selection of <Gold>cinematography</Gold>...{" "}
         </Title>
-        <Ul>
-          <Li>movies</Li>
-          <Li>producers</Li>
-          <Li>tv shows</Li>
-          <Li>actors</Li>
-        </Ul>
       </Text>
     </Section>
   );
@@ -78,35 +72,6 @@ const Gold = styled.span`
   -webkit-background-clip: text;
   @media (min-width: 1200px) {
     font-size: 3.5rem;
-  }
-`;
-
-const Ul = styled.ul`
-  letter-spacing: 2px;
-  margin: 0 35px;
-  padding: 10px;
-  text-transform: capitalize;
-  width: auto;
-  @media (min-width: 700px) {
-    font-size: 1rem;
-    margin: 0 70px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 1.5rem;
-  }
-`;
-const Li = styled.li`
-  background: linear-gradient(to right, #d1840f 60%, #d4b70f);
-  cursor: pointer;
-  font-weight: bold;
-  margin: 5px;
-  padding: 0 10px;
-  transition: 0.3s;
-  &:hover {
-    color: #000;
-  }
-  @media (min-width: 1200px) {
-    width: 450px;
   }
 `;
 

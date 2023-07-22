@@ -13,7 +13,7 @@ function Name() {
 
 const UserName = styled.h1`
   color: black;
-  font: bold 1.7rem grande;
+  font: bold 1.7rem semplicitapro;
   letter-spacing: 1px;
   text-align: center;
   &:nth-child(3) {
@@ -29,7 +29,7 @@ const UserName = styled.h1`
 `;
 
 const Data = styled.h1`
-  font: normal 1.3rem grande;
+  font: normal 1.3rem semplicitapro;
   letter-spacing: 1px;
   text-align: center;
 `;

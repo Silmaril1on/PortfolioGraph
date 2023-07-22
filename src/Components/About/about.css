@@ -3,7 +3,7 @@
 }
 
 .property-cascade > h1 {
-  font: normal 1.2rem grande;
+  font: normal 1.2rem semplicitapro;
   letter-spacing: 1px;
   margin: 8px;
   text-transform: capitalize;
@@ -11,7 +11,7 @@
 
 .iliauni-headers {
   color: black;
-  font-family: grande;
+  font-family: semplicitapro;
   overflow: hidden;
   max-width: 600px;
   width: 100%;

@@ -6,7 +6,7 @@ function Headline() {
   return (
     <Main>
       <Wrapper>
-        <Title id="info">warning ! </Title>
+        <Title id="info">WARNING ! </Title>
         <PreTitleDiv>
           <IconDiv>
             <Img src={revolver} alt="revolver" />
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   color: black;
-  font: bold 3.7rem grande;
+  font: bold 3.6rem semplicitapro;
   letter-spacing: 4px;
   @media (min-width: 550px) {
     font-size: 5rem;
@@ -68,7 +68,7 @@ const Img = styled.img`
 
 const Title2 = styled.h2`
   color: black;
-  font: bold 2rem grande;
+  font: bold 2rem semplicitapro;
   padding: 5px;
 `;
 

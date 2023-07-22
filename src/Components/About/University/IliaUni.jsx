@@ -15,15 +15,6 @@ function IliaUni() {
           <h1>years</h1>
           <h1>2010-2013</h1>
           <h1>faculty of Sciences and Art</h1>
-          <p>
-            After transfering myself from <Gold>UG</Gold> to{" "}
-            <Gold>iliauni</Gold> this was almost golden years of my lifetime.
-            Those 3 years were unforgettable, like almost for every other
-            students. Despite of few subjects failure, i never had to regret
-            anything, cause every single day was worth for it. If i could
-            backtrack, i would do exactly the same as i did it before. love this
-            university for giving me such a great great days.
-          </p>
         </div>
         <IliaPhotos />
       </Container>
@@ -67,12 +58,6 @@ const Img = styled.img`
   object-fit: cover;
   filter: saturate(0.3);
   width: 100%;
-`;
-
-const Gold = styled.span`
-  color: goldenrod;
-  text-shadow: 0 0 4px black;
-  padding: 5px;
 `;
 
 export default IliaUni;

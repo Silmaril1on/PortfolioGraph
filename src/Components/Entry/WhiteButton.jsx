@@ -10,35 +10,13 @@ const containerVariant = {
   },
   visible: {
     scale: 1,
+    transition: {
+      duration: 1,
+      delay: 13,
+    },
   },
   hover: {
     scale: [1, 1.1, 1, 1.1, 1, 1.1],
-  },
-};
-
-const slideVariants = {
-  hidden: {
-    x: -1000,
-  },
-  visible: {
-    x: 0,
-    transition: {
-      duration: 3,
-      delay: 13,
-    },
-  },
-};
-
-const childVariants = {
-  hidden: {
-    x: 1000,
-  },
-  visible: {
-    x: 0,
-    transition: {
-      duration: 3,
-      delay: 13,
-    },
   },
 };
 
@@ -59,9 +37,9 @@ function WhiteButton() {
         animate="visible"
         whileHover="hover"
       >
-        <Div as={motion.div} variants={slideVariants}></Div>
-        <Div as={motion.div} variants={childVariants}></Div>
-        <Div as={motion.div} variants={slideVariants}></Div>
+        <Div></Div>
+        <Div></Div>
+        <Div></Div>
       </Inner>
     </Container>
   );

@@ -16,10 +16,10 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font: normal 3rem grande;
+  font: normal 3rem semplicitapro;
   color: black;
   letter-spacing: 5px;
-  line-height: 25px;
+  line-height: 40px;
   margin: 5px 20px;
   &:nth-child(2) {
     font-size: 1.5rem;
@@ -27,7 +27,7 @@ const Title = styled.h1`
   }
   @media (min-width: 900px) {
     font-size: 5rem;
-    line-height: 40px;
+    line-height: 60px;
   }
 `;
 

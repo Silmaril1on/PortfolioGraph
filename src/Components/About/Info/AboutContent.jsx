@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Property from "./Property";
 import Value from "./Value";
-import Paragraph from "./Paragraph";
 
 function AboutContent() {
   return (
@@ -11,7 +10,6 @@ function AboutContent() {
         <Property />
         <Value />
       </Row>
-      <Paragraph />
     </Section>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Repeat from "./Repeat";
 import red from "../../Assets/result.png";
 import horse from "../../Assets/horse.jpg";
 import Navigation from "./Navigation";
@@ -44,7 +43,6 @@ function Navlinks() {
           <Clock src={clock} alt="clock" />
           <Img src={red} alt="horse" />
           <Navigation />
-          <Repeat />
         </ImgDiv>
       </Red>
     </Section>

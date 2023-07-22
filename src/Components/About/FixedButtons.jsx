@@ -4,10 +4,6 @@ import django from "../../Assets/django_instrumental.mp3";
 import play from "../../Assets/play.png";
 import pause from "../../Assets/pause.png";
 
-const style = {
-  fontSize: 30,
-};
-
 function FixedButtons() {
   const [isPlaying, setIsPlaying] = useState(false);
   const musicRef = useRef();
@@ -54,11 +50,15 @@ const Main = styled.main`
   flex-direction: column;
   height: auto;
   justify-content: end;
-  padding: 5px;
   right: 5px;
+  padding: 5px;
   position: fixed;
+  transition: 0.3s;
   width: 100px;
   z-index: 22;
+  &:hover {
+    background-color: #000000a7;
+  }
 `;
 
 const Div = styled.div`

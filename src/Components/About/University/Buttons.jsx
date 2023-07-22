@@ -18,7 +18,7 @@ function Buttons() {
               setAlasania(false);
             }}
           >
-            ilia state university
+            Ilia State University
           </Button>
         </BtnDiv>
         <BtnDiv>
@@ -28,7 +28,7 @@ function Buttons() {
               setAlasania(true);
             }}
           >
-            University of georgia
+            University of Georgia
           </Button>
         </BtnDiv>
       </ButtonRow>
@@ -61,7 +61,7 @@ const Button = styled.button`
   cursor: pointer;
   color: #ddd;
   border: none;
-  font: normal 1rem grande;
+  font: normal 0.9rem semplicitapro;
   height: 35px;
   letter-spacing: 2px;
   transition: 0.3s ease;

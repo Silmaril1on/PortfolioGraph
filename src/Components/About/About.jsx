@@ -20,6 +20,7 @@ const Main = styled.main`
   align-items: top;
   display: flex;
   flex-direction: column;
+  font-family: semplicitapro;
   justify-content: center;
   position: relative;
   width: 100%;

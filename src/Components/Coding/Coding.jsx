@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import TopImage from "./TopImage";
 import Content from "./Content";
+import Footer from "../Footer/Footer";
 
 function Coding() {
   return (
     <Main>
       <TopImage />
       <Content />
+      <Footer />
     </Main>
   );
 }

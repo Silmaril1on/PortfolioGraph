@@ -22,7 +22,7 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font: normal 2.3rem grande;
+  font: normal 2.3rem semplicitapro;
   color: black;
   margin: 30px 40px;
   text-shadow: 0 0 8px white;

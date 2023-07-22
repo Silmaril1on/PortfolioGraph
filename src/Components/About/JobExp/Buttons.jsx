@@ -21,7 +21,7 @@ function Buttons() {
               setAskaneli(false);
             }}
           >
-            diesel
+            Diesel
           </Button>
         </BtnDiv>
         <BtnDiv>
@@ -43,7 +43,7 @@ function Buttons() {
               setAskaneli(true);
             }}
           >
-            askaneli
+            Askaneli
           </Button>
         </BtnDiv>
       </ButtonsDiv>
@@ -83,7 +83,7 @@ const Button = styled.button`
   cursor: pointer;
   color: #ddd;
   border: none;
-  font: normal 1.5rem grande;
+  font: normal 1.5rem semplicitapro;
   height: 40px;
   letter-spacing: 2px;
   transition: 0.3s ease;

@@ -17,8 +17,8 @@ const navlinks = [
     path: "/interest",
   },
   {
-    name: "achievements",
-    path: "/achievements",
+    name: "collection",
+    path: "/collection",
   },
 ];
 

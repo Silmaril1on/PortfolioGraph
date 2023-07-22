@@ -16,7 +16,7 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font: normal 3rem grande;
+  font: normal 3rem semplicitapro;
   color: black;
   letter-spacing: 2px;
   line-height: 25px;

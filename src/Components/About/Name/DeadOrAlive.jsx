@@ -11,10 +11,7 @@ function DeadOrAlive() {
       <Title>
         wanted dead <Span>or</Span> alive
       </Title>
-      <Price>
-        {" "}
-        <Dollar>$</Dollar> 5000{" "}
-      </Price>
+      <Price> $ 5000 </Price>
     </Section>
   );
 }
@@ -39,7 +36,7 @@ const Img = styled.img`
 `;
 
 const Title = styled.h1`
-  font: normal 1.9rem grande;
+  font: normal 1.9rem semplicitapro;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -62,7 +59,7 @@ const Dollar = styled.span`
 `;
 
 const Price = styled.h1`
-  font: normal 5rem grande;
+  font: normal 5rem semplicitapro;
   text-shadow: 0 0 15px #ddd;
 `;
 

@@ -23,15 +23,6 @@ function Hello() {
       <Title>
         living in <Gold>Tbilisi, GEO</Gold>{" "}
       </Title>
-      <Info>
-        I think, as you already guess, my passion is to movies and games.as i'm
-        trying to create some design for my portfolio, getting patterns from
-        some games of movie contents. it helps and simplifies, plus reduces
-        thinking time. apparently, creating something from the
-        <Null> null </Null> gets me some pride and complacent. i am junior
-        developer and i am proud of my creations. but still, there is more to
-        do. farewell visitors. <Null>see you later</Null>
-      </Info>
       <Info1>pre-order now</Info1>
     </Section>
   );

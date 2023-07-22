@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Tab from "./Tab";
 import Information from "./Information";
 import Works from "./Works";
-import Footer from "../Footer/Footer";
 
 function Content() {
   return (
@@ -17,7 +16,6 @@ function Content() {
       <Information />
       <Headline>C:\Users\myWork...</Headline>
       <Works />
-      <Footer />
     </Section>
   );
 }

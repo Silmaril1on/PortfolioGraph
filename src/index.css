@@ -5,13 +5,11 @@
 }
 
 @font-face {
-  font-family: "grande";
-  src: local("grande"), url("../src/Fonts/RioGrande.ttf") format("truetype");
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("../src/Fonts/Riosemplicitapro.ttf") format("truetype");
 }
-@font-face {
-  font-family: "docktrin";
-  src: local("docktrin"), url("../src/Fonts/docktrin.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "semplicitapro";
   src: local("semplicitapro"),

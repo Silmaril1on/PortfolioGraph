@@ -109,7 +109,7 @@ const ContentDiv = styled.div`
 
 const Title = styled.h1`
   color: black;
-  font: normal 1rem grande;
+  font: normal 1rem semplicitapro;
   letter-spacing: 1px;
   text-shadow: 0 0 4px goldenrod;
 `;
