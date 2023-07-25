@@ -17,8 +17,8 @@ const navlinks = [
     path: "/interest",
   },
   {
-    name: "collection",
-    path: "/collection",
+    name: "collectibles",
+    path: "/collectibles",
   },
 ];
 

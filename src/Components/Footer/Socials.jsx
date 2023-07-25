@@ -24,7 +24,7 @@ function Socials() {
         {socialIcons.map((icons, index) => {
           return (
             <Div key={index}>
-              <Link style={style} to={icons.link}>
+              <Link style={style} target="_blank" to={icons.link}>
                 <ImgDiv>
                   <Img src={icons.Icon} alt="icon" />
                 </ImgDiv>

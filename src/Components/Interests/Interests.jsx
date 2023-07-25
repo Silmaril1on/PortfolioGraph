@@ -5,8 +5,15 @@ import { Helmet } from "react-helmet";
 import Headline from "./Headline";
 import Buttons from "./Buttons";
 import Footer from "../Footer/Footer";
+import ReButton from "../ReButton";
+import { useNavigate } from "react-router-dom";
 
 function Interests() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate("/welcome");
+  };
+
   return (
     <Main>
       <Helmet>
@@ -15,6 +22,7 @@ function Interests() {
       <TopContainer />
       <Headline />
       <Buttons />
+      <ReButton onClick={goBack} />
       <Footer />
     </Main>
   );

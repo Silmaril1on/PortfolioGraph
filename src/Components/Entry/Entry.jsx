@@ -33,8 +33,9 @@ const Background = styled.main`
   animation: ${move} 140s ease infinite;
   background: url(${banner});
   background-size: cover;
-  height: 750px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 `;
 
 const Blur = styled.div`

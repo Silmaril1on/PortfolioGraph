@@ -3,10 +3,16 @@ import styled from "styled-components";
 import django from "../../Assets/django_instrumental.mp3";
 import play from "../../Assets/play.png";
 import pause from "../../Assets/pause.png";
+import { useNavigate } from "react-router-dom";
 
 function FixedButtons() {
   const [isPlaying, setIsPlaying] = useState(false);
   const musicRef = useRef();
+
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate("/welcome");
+  };
 
   const playPause = () => {
     setIsPlaying(!isPlaying);
@@ -35,6 +41,7 @@ function FixedButtons() {
       <Bookmark href="#info">info</Bookmark>
       <Bookmark href="#university">university</Bookmark>
       <Bookmark href="#jobs">jobs</Bookmark>
+      <Bookmark onClick={goBack}>GO BACK</Bookmark>
     </Main>
   );
 }

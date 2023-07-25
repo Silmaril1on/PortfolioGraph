@@ -7,6 +7,7 @@ import MainPage from "./Components/Main Page/MainPage";
 import Coding from "./Components/Coding/Coding";
 import About from "./Components/About/About";
 import Interests from "./Components/Interests/Interests";
+import Collectibles from "./Components/Collectibles/Collectibles";
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
           <Route path="/story" element={<About />} />
           <Route path="/coding" element={<Coding />} />
           <Route path="/interest" element={<Interests />} />
+          <Route path="/collectibles" element={<Collectibles />} />
         </Routes>
       </AnimatePresence>
     </>

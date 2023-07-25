@@ -1,0 +1,149 @@
+/* collectible buttons */
+.collectibles-btn-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 5px;
+  width: auto;
+}
+
+.collectibles-btn-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.collectibles-btn {
+  background-color: black;
+  outline: 2px solid rgba(218, 165, 32, 0.699);
+  outline-offset: 2px;
+  border: 1px solid rgba(218, 165, 32, 0.699);
+  cursor: pointer;
+  margin: 8px 2px;
+  transition: 0.3s;
+  margin: 10px;
+  width: 65px;
+}
+.collectibles-btn:hover {
+  outline: 2px solid goldenrod;
+  transform: scale(1.1);
+}
+
+.collectibles-btn > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* collectible render styled */
+.collectibles-data-card-container {
+  margin: 5px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.collectibles-data-image-div {
+  margin: 5px;
+  height: 350px;
+  width: 250px;
+}
+
+.collectibles-data-image-div > img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.collectibles-data-image-div > img:hover {
+  transform: rotateX(-20deg) rotate(-10deg);
+}
+
+.collectibles-content-container {
+  font-family: semplicitapro;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  text-transform: capitalize;
+  right: 0;
+  width: 200px;
+}
+
+.collectibles-content-container > h1 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: goldenrod;
+  letter-spacing: 2px;
+}
+
+.collectibles-content-container > h2 {
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+
+.collectibles-content-container > h4 {
+  color: #ccc;
+  font-size: 0.6rem;
+  padding: 3px 0;
+}
+
+.collectibles-content-container > h6 {
+  font-style: italic;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .collectibles-data-card-container {
+    border-left: 10px double rgba(218, 165, 32, 0.753);
+    transition: 1s ease;
+  }
+  .collectibles-data-card-container:hover {
+    border-left: 10px double goldenrod;
+  }
+  .collectibles-btn-container {
+    width: 35%;
+  }
+
+  .collectibles-data-card-container {
+    height: 100%;
+    width: auto;
+  }
+
+  .collectibles-data-image-div {
+    height: 570px;
+    left: 3%;
+    position: absolute;
+    top: 10%;
+    width: 420px;
+  }
+  .collectibles-content-container {
+    top: 5%;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .collectibles-data-image-div {
+    left: 7%;
+  }
+  .collectibles-content-container {
+    right: 20px;
+    width: 500px;
+  }
+  .collectibles-content-container > h1 {
+    font-size: 3rem;
+  }
+  .collectibles-content-container > h2 {
+    font-size: 1.5rem;
+  }
+  .collectibles-content-container > h4 {
+    font-size: 1.3rem;
+  }
+  .collectibles-content-container > h6 {
+    font-size: 1rem;
+  }
+}
