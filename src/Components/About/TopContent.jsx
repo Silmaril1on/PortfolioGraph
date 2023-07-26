@@ -8,6 +8,7 @@ import Gallery from "./Carousel/Gallery";
 import University from "./University/University";
 import Jobs from "../About/JobExp/Jobs";
 import Footer from "../Footer/Footer";
+import paper from "../../Assets/paper-min.jpg";
 
 function TopContent() {
   return (
@@ -29,7 +30,10 @@ function TopContent() {
 const Section = styled.section`
   align-items: center;
   display: flex;
-  background: linear-gradient(220deg, white, grey 70%);
+  background: linear-gradient(#00000034, #00000034), url(${paper});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   flex-direction: column;
   height: 100%;

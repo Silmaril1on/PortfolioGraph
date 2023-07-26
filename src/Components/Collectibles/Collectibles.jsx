@@ -4,12 +4,20 @@ import myPrecious from "../Collectibles/collectibles/collectiblesData";
 import CollectiblesWrapper from "../Collectibles/collectibles/CollectiblesWraper";
 import Headline from "./Headline";
 import ReButton from "../../Components/ReButton";
+import { useNavigate } from "react-router-dom";
+import Brands from "./Brands";
+import Footer from "../Footer/Footer";
 
 export const CollectiblesContent = React.createContext();
 
 function Collectibles() {
   const [product] = useState(myPrecious);
   const [renderData, setRenderData] = useState(myPrecious[0]);
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate("/welcome");
+  };
 
   const changeProduct = (index) => {
     const renderData = myPrecious[index];
@@ -22,8 +30,10 @@ function Collectibles() {
     >
       <Main>
         <Headline />
+        <Brands />
         <CollectiblesWrapper />
-        <ReButton />
+        <ReButton onClick={goBack} />
+        <Footer />
       </Main>
     </CollectiblesContent.Provider>
   );

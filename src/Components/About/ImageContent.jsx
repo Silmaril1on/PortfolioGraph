@@ -42,6 +42,7 @@ const Section = styled.section`
   overflow: hidden;
   width: 100%;
   @media (min-width: 800px) {
+    height: auto;
     width: 35%;
   }
 `;
@@ -49,6 +50,10 @@ const Section = styled.section`
 const ImgDiv = styled.div`
   height: 320px;
   width: 200px;
+  @media (min-width: 1200px) {
+    height: 100%;
+    width: 320px;
+  }
 `;
 
 const Img = styled.img`
@@ -60,6 +65,9 @@ const Img = styled.img`
   &:hover {
     filter: saturate(1);
     transform: scale(1.1);
+  }
+  @media (min-width: 1200px) {
+    padding: 20px;
   }
 `;
 

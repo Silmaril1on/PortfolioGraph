@@ -19,10 +19,13 @@
 
 .collectibles-btn {
   background-color: black;
+  display: flex;
+  justify-content: center;
   outline: 2px solid rgba(218, 165, 32, 0.699);
   outline-offset: 2px;
   border: 1px solid rgba(218, 165, 32, 0.699);
   cursor: pointer;
+  height: 65px;
   margin: 8px 2px;
   transition: 0.3s;
   margin: 10px;
@@ -34,8 +37,9 @@
 }
 
 .collectibles-btn > img {
+  object-fit: cover;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 /* collectible render styled */
@@ -47,16 +51,19 @@
 }
 
 .collectibles-data-image-div {
+  display: flex;
+  justify-content: center;
   margin: 5px;
-  height: 350px;
-  width: 250px;
+  height: 390px;
+  width: 200px;
 }
 
 .collectibles-data-image-div > img {
   height: 100%;
+  padding: 10px;
   object-fit: cover;
   transition: 0.5s;
-  width: 100%;
+  width: auto;
 }
 
 .collectibles-data-image-div > img:hover {
@@ -127,8 +134,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .collectibles-btn {
+    height: 90px;
+    width: 90px;
+  }
   .collectibles-data-image-div {
-    left: 7%;
+    left: 15%;
   }
   .collectibles-content-container {
     right: 20px;
