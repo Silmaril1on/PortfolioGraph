@@ -38,9 +38,7 @@ function FixedButtons() {
           <source src={django} type="audio/mp3" />
         </audio>
       </Div>
-      <Bookmark href="#info">info</Bookmark>
-      <Bookmark href="#university">university</Bookmark>
-      <Bookmark href="#jobs">jobs</Bookmark>
+
       <Bookmark onClick={goBack}>GO BACK</Bookmark>
     </Main>
   );
